@@ -1,0 +1,116 @@
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+#calculator {
+    width: 30%;
+    margin: 3rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.input {
+    margin: 0.5rem auto;
+    width: 90%;
+    border: 1px solid Gainsboro;
+    border-radius: 5px;
+    height: 6rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: DimGray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.previous {
+    font-size: 1rem;
+}
+
+#input:hover, button:hover {
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        'operators operators operators operators'
+        'line2 line2 line2 delete'
+        'line3 line3 line3 result'
+        'line4 line4 line4 result'
+        'line5 line5 line5 result';
+}
+
+.operators {
+    grid-area: operators;
+}
+
+.line2 {
+    grid-area: line2;
+}
+
+.line3 {
+    grid-area: line3;
+}
+
+.line4 {
+    grid-area: line4;
+}
+
+.line5 {
+    grid-area: line5;
+}
+
+.delete {
+    grid-area: delete;
+}
+
+.result {
+    grid-area: result;
+}
+
+.operators button, .delete button {
+    background-color: GhostWhite;
+}
+
+button {
+    margin-top: 1rem;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    width: 80px;
+    height: 48px;
+    color: Gray;
+    font-size: 2rem;
+    text-align: center;
+}
+
+button:active {
+    transition: 0.1s;
+    font-weight: bold;
+    font
+    color: black;
+}
+
+.delete button {
+    margin-left: 0.2rem;
+}
+
+.result button {
+    border: 1px solid Silver;
+    background-color: LightGrey;
+    height: 90%;
+    margin-left: 0.2rem;
+}
+
+@media (max-width: 600px) {
+    #calculator {
+        width: 90%;
+    }
+}

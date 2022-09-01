@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <section id="calculator">
+      <div class="input">
+        <div class="previous" data-previous-operation></div>
+        <div data-current-operation></div>
+      </div>
+      <div class="buttons">
+        <div class="operators">
+          <button data-operators>+</button>
+          <button data-operators>-</button>
+          <button data-operators>*</button>
+          <button data-operators>/</button>
+        </div>
+        <div class="line2">
+          <button data-number>7</button>
+          <button data-number>8</button>
+          <button data-number>9</button>
+        </div>
+        <div class="line3">
+          <button data-number>4</button>
+          <button data-number>5</button>
+          <button data-number>6</button>
+        </div>
+        <div class="line4">
+          <button data-number>1</button>
+          <button data-number>2</button>
+          <button data-number>3</button>
+        </div>
+        <div class="line5">
+          <button data-number>0</button>
+          <button data-number>.</button>
+          <button data-clear>C</button>
+        </div>
+        <div class="delete">
+          <button data-delete>←</button>
+        </div>
+        <div class="result">
+          <button data-equals>=</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
